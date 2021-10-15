@@ -28,3 +28,8 @@ button {
   justify-content: space-between;
   list-style: none;
 }
+/*.....task-10....*/
+.containerOne {
+  width: 30px;
+  height: 30px;
+}
