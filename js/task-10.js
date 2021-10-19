@@ -12,22 +12,20 @@ const box = document.querySelector('#boxes');
 createBtn.addEventListener("click", createBoxes);
 destroyBtn.addEventListener("click", destroyBoxes);
 
-
+let size = 30;
+ 
 function createBoxes() {
   const amount = inputNumber.value;
-  let elementWidthSize = `30`;
-  let elementHeightSize = `30`;
+  
   //console.log (amount)
   for (let i = 0; i < amount; i += 1) {
     const divElement = document.createElement('div');
     divElement.style.backgroundColor = getRandomHexColor();
-    divElement.style.width = `${Number.parseInt(elementWidthSize)}px`;
-    divElement.style.height = `${Number.parseInt(elementHeightSize)}px`;
+    divElement.style.width = `${size}px`;
+    divElement.style.height = `${size}px`;
     
-    elementWidthSize = `${Number.parseInt(elementWidthSize)+10}px`;
-    elementHeightSize = `${Number.parseInt(elementHeightSize)+10}px`;
-     //console.log(divElement);
-   
+    //console.log(divElement);
+     size +=10
     box.append(divElement)
    }
 }
@@ -36,6 +34,6 @@ function createBoxes() {
 function destroyBoxes() {
   box.innerHTML = '';
   inputNumber.value = '';
-  function createBoxes() { };
+  
 }
 

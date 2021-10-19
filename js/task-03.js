@@ -14,7 +14,7 @@ const images = [
 ];
 
 const newImageElement = images.map(({url, alt }) =>
-  `<li class="galery__item"><img class="galery__image"src=${url} alt=${alt} width="480" height="300"</img></li>`).join("");
+  `<li class="gallery__item"> <img class="gallery__image" src="${url}" alt="${alt}" width="480" height="300" /></li>`).join("");
 
 
 const gallery = document.querySelector('.gallery');

@@ -7,6 +7,7 @@ function inputClickHandler(event) {
      if (event.currentTarget.value.length !== number) {
         //console.log('No')
         textInput.classList.add('invalid')
+        textInput.classList.remove('valid');
      } else {
         //console.log('Yes')
         textInput.classList.replace('invalid','valid')
